@@ -1,5 +1,6 @@
 import "@fontsource/barlow";
 import "@fontsource/inter";
+import "@fontsource/roboto-condensed"
 
 export const theme = {
   colors:{  
@@ -21,6 +22,7 @@ export const theme = {
 
   font: {
      barlow:"'Barlow', 'sans-serif'",
-     inter:"'Inter','sans-serif'"
+     inter:"'Inter','sans-serif'",
+     robotoCondensed:"'Roboto Condensed','sans-seriff'"
   }
 }

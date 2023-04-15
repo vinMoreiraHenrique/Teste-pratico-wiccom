@@ -1,6 +1,6 @@
 import React from "react";
 
-import { StyledHeader, StyledNavBar } from "./styles";
+import { StyledHeader, StyledHeaderContainer, StyledNavBar } from "./styles";
 import { SearchInput } from "../SearchInput";
 import { BiUserCircle } from "react-icons/bi";
 import { AiOutlineStar } from "react-icons/ai";
@@ -10,7 +10,7 @@ import { HeaderCallTous } from "../HeaderCallToUs";
 
 export const Header = () => {
   return (
-    <>
+    <StyledHeaderContainer>
       <HeaderCallTous />
       <StyledHeader>
         <img
@@ -44,6 +44,6 @@ export const Header = () => {
         <AiOutlineStar style={{ width: "24px", height: "24px", cursor: "pointer" }} />
         <BsCart3 style={{ width: "24px", height: "24px", cursor: "pointer" }} />
       </StyledHeader>
-    </>
+    </StyledHeaderContainer>
   );
 };

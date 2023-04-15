@@ -1,14 +1,26 @@
 import styled from "styled-components";
 import { theme } from "../../styles/theme";
 
-export const StyledHeader = styled.header`
+export const StyledHeaderContainer = styled.header`
+  display: flex;
   width: 1280px;
+  flex-direction: column;
+  svg{
+    color: ${theme.colors.gray1};
+    &:hover{
+      color: ${theme.colors.white};
+    }
+  }
+`;
+
+export const StyledHeader = styled.div`
+  width: 100%;
   background-color: ${theme.colors.black1};
   padding: 20px 56px;
   display: flex;
   gap: 16px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 72px;
   font-family: ${theme.font.barlow};
 
@@ -43,13 +55,13 @@ export const StyledNavBar = styled.nav`
         width: 0%;
         height: 3px;
         background-color: ${theme.colors.orange1};
-        transition: width 0.3s ease-in-out;
+        transition: width 0.2s ease-in-out;
       }
       &:hover::after {
         width: 100%;
       }
       &:hover {
-        background-color: ${theme.colors.gray1};
+        background-color: ${theme.colors.dark3};
         &:hover {
           a {
             color: ${theme.colors.white};

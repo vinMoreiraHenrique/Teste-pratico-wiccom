@@ -6,7 +6,7 @@ export const StyledHeaderCallToUs = styled.div`
 display: flex;
 justify-content: space-between;
 align-items: center;
-background-color: ${theme.colors.dark2};
+background-color: ${theme.colors.dark1};
 width: 100%;
 height: 32px;
 padding: 10px 56px;
