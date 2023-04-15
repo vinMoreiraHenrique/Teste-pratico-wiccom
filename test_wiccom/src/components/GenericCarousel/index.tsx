@@ -23,6 +23,8 @@ export const GenericCarousel = ({
     const newSlides = Array.from({ length: numberOfSlides }, (_, i) => (
       <Carousel.Slide key={i}>{children}</Carousel.Slide>
     ));
+
+    setSlides(newSlides);
   }, [numberOfSlides, children]);
 
   return (

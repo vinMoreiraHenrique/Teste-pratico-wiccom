@@ -8,7 +8,7 @@ import {
 
 export const LargeImgCarousel = () => {
   return (
-    <GenericCarousel numberOfSlides={3} withIndicators={true}>
+    <GenericCarousel numberOfSlides={3} withIndicators={true} withControls={true}>
       <StyledLargeImgCarousel>
         <StyledLargeImgContainer>
           <StyledTextBox>
