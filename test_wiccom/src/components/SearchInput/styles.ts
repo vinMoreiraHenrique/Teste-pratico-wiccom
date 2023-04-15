@@ -9,8 +9,13 @@ export const StyledSearchInputContainer = styled.div`
   height: 40px;
   border-radius: 4px;
   border: 1px solid ${theme.colors.dark3};
-  padding-right: 8px;
+  /* padding-right: 8px; */
+  position: relative;
   span {
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-right: 0px;
     display: flex;
     background-color: transparent;
     width: 20%;
@@ -25,7 +30,7 @@ export const StyledSearchInput = styled.input`
   height: 100%;
   width: 100%;
   border: none;
-  outline: none;
+  /* outline: none; */
   padding-left: 16px;
 
   &::placeholder {

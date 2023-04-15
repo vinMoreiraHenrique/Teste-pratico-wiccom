@@ -20,6 +20,7 @@ export const SearchInput = () => {
           setValue(e.target.value)
         }
         placeholder="Buscar"
+        maxLength={20}
       />
       {value.length > 0 ? (
         <span onClick={handleClear} style={{border:"none"}}><IoMdClose style={{color: theme.colors.white, height: "22px", width: "22px", cursor: "pointer"}}/></span>

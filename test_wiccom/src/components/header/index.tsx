@@ -40,9 +40,9 @@ export const Header = () => {
           </ul>
         </StyledNavBar>
         <SearchInput />
-        <BiUserCircle style={{ width: "24px", height: "24px" }} />
-        <AiOutlineStar style={{ width: "24px", height: "24px" }} />
-        <BsCart3 style={{ width: "24px", height: "24px" }} />
+        <BiUserCircle style={{ width: "24px", height: "24px", cursor: "pointer" }} />
+        <AiOutlineStar style={{ width: "24px", height: "24px", cursor: "pointer" }} />
+        <BsCart3 style={{ width: "24px", height: "24px", cursor: "pointer" }} />
       </StyledHeader>
     </>
   );
