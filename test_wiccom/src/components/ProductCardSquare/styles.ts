@@ -57,6 +57,11 @@ export const StyledProductsSquareCarouselContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  .favorite {
+    :hover {
+      color: yellow;
+    }
+  }
 `;
 
 export const StyledOuterDiv = styled.div`
