@@ -3,6 +3,7 @@ import { theme } from "../../styles/theme";
 
 export const StyledProductsCarouselContainer = styled.div`
   border-radius: 50%;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,7 +48,6 @@ export const StyledProductsContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 400px;
   p {
     margin-top: 16px;
     color: ${theme.colors.black1};
