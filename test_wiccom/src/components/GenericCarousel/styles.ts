@@ -7,6 +7,19 @@ export const StyledCarousel = styled.div`
     align-items: baseline;
 }
 
+.mantine-Carousel-control{
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    color: ${theme.colors.black1};
+    background-color: ${theme.colors.gray2};
+    transition: .5s;
+    border:0;
+    &:hover{
+        background-color: ${theme.colors.orange2};
+    }
+}
+
   .mantine-1jkjqkp {
     width: 40px;
     height: 2px;
