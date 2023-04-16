@@ -5,9 +5,9 @@ export const StyledHeaderContainer = styled.header`
   display: flex;
   width: 1280px;
   flex-direction: column;
-  svg{
+  svg {
     color: ${theme.colors.gray1};
-    &:hover{
+    &:hover {
       color: ${theme.colors.white};
     }
   }

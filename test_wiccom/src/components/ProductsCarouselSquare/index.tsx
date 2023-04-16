@@ -23,8 +23,14 @@ export const ProductsCarouselSquare = () => {
             height: "341px",
           }}
         >
-          <ProductCardSquare categoryText="Whey Zero (Com Lactase) Black Skull - 900G" />
-          <ProductCardSquare categoryText="Whey Zero (Com Lactase) Black Skull - 900G" />
+          <ProductCardSquare
+            categoryText="Whey Zero (Com Lactase) Black Skull - 900G"
+            modelName="flavour"
+          />
+          <ProductCardSquare
+            categoryText="Whey Zero (Com Lactase) Black Skull - 900G"
+            modelName="flavour"
+          />
           <ProductCardSquare categoryText="Whey Zero (Com Lactase) Black Skull - 900G" />
           <ProductCardSquare categoryText="Whey Zero (Com Lactase) Black Skull - 900G" />
         </div>

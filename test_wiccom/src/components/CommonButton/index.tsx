@@ -1,13 +1,13 @@
-import { StyledCommonButton } from "./styles"
+import { StyledCommonButton } from "./styles";
 
 interface ICommonButton {
-    buttonText: string;
+  buttonText: string;
 }
 
-export const CommonButton = ({buttonText}: ICommonButton) => {
-    return(
+export const CommonButton = ({ buttonText }: ICommonButton) => {
+  return (
     <StyledCommonButton>
-        <p>{buttonText}</p>
+      <p>{buttonText}</p>
     </StyledCommonButton>
-    )
-}
+  );
+};

@@ -7,4 +7,3 @@ export const ProductCarouselContainer = styled.div`
   justify-content: center;
   align-items: center;
 `;
-
