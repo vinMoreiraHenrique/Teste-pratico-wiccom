@@ -20,7 +20,7 @@ export const LargeImgCarousel = () => {
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna
             </p>
-            <CommonButton />
+            <CommonButton buttonText="Confira"/>
           </StyledTextBox>
           <img
             src="src\assets\mainImgs\gym_man.png"
