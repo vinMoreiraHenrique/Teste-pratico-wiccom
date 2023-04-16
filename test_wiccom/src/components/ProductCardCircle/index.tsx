@@ -6,13 +6,12 @@ interface IProductCard {
     categoryText: string;
 }
 
-export const ProductCard = ({categoryText}: IProductCard) => {
+export const ProductCardCircle = ({categoryText}: IProductCard) => {
     return(
   <StyledProductsContainer>
     <StyledProductsCarouselContainer>
       <div className="circle"></div>
       <img src="src\assets\mainImgs\product1.png" alt="Whey protein" />
-      <div></div>
     </StyledProductsCarouselContainer>
     <p>{categoryText}</p>
   </StyledProductsContainer>

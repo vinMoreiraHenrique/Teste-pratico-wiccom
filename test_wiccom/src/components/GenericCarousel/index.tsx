@@ -42,8 +42,8 @@ export const GenericCarousel = ({
       <Carousel
         slideSize={slideSize || "100%"}
         height={slideHeight || "100%"}
-        slideGap={slideGap || "xs"}
-        controlsOffset={controlOffset || "xs"}
+        slideGap={slideGap || ""}
+        controlsOffset={controlOffset || ""}
         controlSize={36}
         withControls={withControls || false}
         withIndicators={withIndicators}

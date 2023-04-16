@@ -1,8 +1,8 @@
 import { GenericCarousel } from "../GenericCarousel";
-import { ProductCard } from "../ProductCard";
+import { ProductCardCircle } from "../ProductCardCircle";
 
 
-export const ProductsCarousel = () => {
+export const ProductsCarouselCircle = () => {
   return (
     <GenericCarousel
       numberOfSlides={1}
@@ -19,12 +19,12 @@ export const ProductsCarousel = () => {
           height: "300px"
         }}
       >
-        <ProductCard categoryText="Proteínas" />
-        <ProductCard categoryText="Hipercalóricos" />
-        <ProductCard categoryText="Creatina" />
-        <ProductCard categoryText="Packs" />
-        <ProductCard categoryText="Aminoácidos" />
-        <ProductCard categoryText="Saúde" />
+        <ProductCardCircle categoryText="Proteínas" />
+        <ProductCardCircle categoryText="Hipercalóricos" />
+        <ProductCardCircle categoryText="Creatina" />
+        <ProductCardCircle categoryText="Packs" />
+        <ProductCardCircle categoryText="Aminoácidos" />
+        <ProductCardCircle categoryText="Saúde" />
       </div>
     </GenericCarousel>
   );
