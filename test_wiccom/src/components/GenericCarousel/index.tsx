@@ -3,6 +3,11 @@ import { StyledCarousel } from "./styles";
 import { useState, useEffect } from "react";
 
 interface ICarousel {
+  dragFree?: boolean;
+  slidesToScroll?: number;
+  controlOffset?: string;
+  slideGap?: string;
+  slideHeight?: string;
   slideSize?: string;
   withIndicators?: boolean;
   withControls?: boolean;
@@ -11,6 +16,11 @@ interface ICarousel {
 }
 
 export const GenericCarousel = ({
+  dragFree,
+  slidesToScroll,
+  controlOffset,
+  slideGap,
+  slideHeight,
   slideSize,
   withIndicators,
   withControls,
@@ -23,18 +33,22 @@ export const GenericCarousel = ({
     const newSlides = Array.from({ length: numberOfSlides }, (_, i) => (
       <Carousel.Slide key={i}>{children}</Carousel.Slide>
     ));
+
+    setSlides(newSlides);
   }, [numberOfSlides, children]);
 
   return (
     <StyledCarousel>
       <Carousel
         slideSize={slideSize || "100%"}
-        height={548}
-        slideGap="lg"
-        controlsOffset="xs"
+        height={slideHeight || "100%"}
+        slideGap={slideGap || "xs"}
+        controlsOffset={controlOffset || "xs"}
         controlSize={36}
         withControls={withControls || false}
         withIndicators={withIndicators}
+        slidesToScroll={slidesToScroll}
+        dragFree={dragFree || false}
       >
         {slides}
       </Carousel>

@@ -6,6 +6,7 @@ import { Header } from "./components/Header";
 import { MyThemeProvider } from "./styles/MyThemeprovider";
 import { theme } from "./styles/theme";
 import { LargeImgCarousel } from "./components/LargeImgCarousel";
+import { ProductsCarousel } from "./components/ProductsCarousel";
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       <Header />
       <main>
         <LargeImgCarousel />
+        <ProductsCarousel />
+
+        
       </main>
     </MyThemeProvider>
   );
