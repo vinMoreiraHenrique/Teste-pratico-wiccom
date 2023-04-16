@@ -1,9 +1,13 @@
 import { StyledCommonButton } from "./styles"
 
-export const CommonButton = () => {
+interface ICommonButton {
+    buttonText: string;
+}
+
+export const CommonButton = ({buttonText}: ICommonButton) => {
     return(
     <StyledCommonButton>
-        <p>Confira</p>
+        <p>{buttonText}</p>
     </StyledCommonButton>
     )
 }

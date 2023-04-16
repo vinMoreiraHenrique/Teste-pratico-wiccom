@@ -11,19 +11,27 @@ export const StyledProductsSquareContainer = styled.div`
   height: 100%;
   transition: 0.5s ease-in-out;
   position: relative;
-  margin: 0px 10px;
+  /* margin: 0px 10px; */
   border: 2px solid ${theme.colors.gray3};
-  background-color: ${theme.colors.white};
   img {
     width: 165px;
     height: 165px;
   }
+  + button {
+    display: none;
+    width: 100%;
+    margin-top: 0px;
+  }
   &:hover {
     background-color: ${theme.colors.gray3};
+    + button {
+      display: block;
+    }
     .buy-panel {
-      height: 70%;
-
+      height: 60%;
       z-index: 10;
+      opacity: 0.95;
+      transition: 0.5s;
     }
   }
   p {
@@ -39,16 +47,21 @@ export const StyledProductsSquareContainer = styled.div`
     align-items: center;
     height: 0;
     background-color: ${theme.colors.white};
-    opacity: 0.95;
+    opacity: 0;
     bottom: 0;
     position: absolute;
     width: 100%;
+    transition: 0.5s;
+
     p {
       font-family: ${theme.font.barlow};
       color: ${theme.colors.black1};
       font-weight: 700;
       font-size: 14px;
       text-transform: uppercase;
+      text-align: left;
+
+      margin-left: 0;
     }
   }
   .product-name {
@@ -86,11 +99,10 @@ export const StyledProductsSquareCarouselContainer = styled.div`
   width: 100%;
 `;
 
-export const StyledInvisibleMenu = styled.div`
-  &:hover {
-    height: 70%;
-    position: absolute;
-    bottom: 0%;
-    z-index: 10;
-  }
+export const StyledOuterDiv = styled.div`
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin: 0px 10px;
 `;

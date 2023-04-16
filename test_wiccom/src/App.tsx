@@ -10,6 +10,7 @@ import { LargeImgCarousel } from "./components/LargeImgCarousel";
 import { ProductCardSquare } from "./components/ProductCardSquare";
 import { ProductsCarouselSquare } from "./components/ProductsCarouselSquare";
 import { ProductsCarouselCircle } from "./components/ProductsCarousel";
+import SelectableButton from "./components/SelectableButton";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <LargeImgCarousel />
         <ProductsCarouselCircle />
         <ProductsCarouselSquare />
+        <SelectableButton textButton="Toffee"/>
         
       </main>
     </MyThemeProvider>
