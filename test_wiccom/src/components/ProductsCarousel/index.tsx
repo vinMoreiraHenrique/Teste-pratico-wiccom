@@ -1,7 +1,6 @@
 import { GenericCarousel } from "../GenericCarousel";
 import { ProductCardCircle } from "../ProductCardCircle";
 
-
 export const ProductsCarouselCircle = () => {
   return (
     <GenericCarousel
@@ -16,7 +15,7 @@ export const ProductsCarouselCircle = () => {
           margin: "10px 0px",
           justifyContent: "center",
           alignItems: "center",
-          height: "300px"
+          height: "300px",
         }}
       >
         <ProductCardCircle categoryText="Proteínas" />

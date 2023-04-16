@@ -6,41 +6,21 @@ import {
   StyledProductsSquareContainer,
 } from "./styles";
 import SelectableButton from "../SelectableButton";
+import { ProductsCarouselHiddenMenu } from "../ProductsCarouselHiddenMenu";
 
 interface IProductCard {
   categoryText: string;
+  modelName?: string;
 }
 
-export const ProductCardSquare = ({ categoryText }: IProductCard) => {
-
+export const ProductCardSquare = ({
+  categoryText,
+  modelName,
+}: IProductCard) => {
   return (
     <StyledOuterDiv>
       <StyledProductsSquareContainer>
-        <div
-          className="buy-panel"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <p style={{marginBottom: "7px"}}>Sabor</p>
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              justifyContent: "center",
-              alignItems: "center",
-              width: "170px"
-            }}
-          >
-            <SelectableButton textButton="toffee" />
-            <SelectableButton textButton="chocolate" />
-            <SelectableButton textButton="morango" />
-            <SelectableButton textButton="baunilha" />
-          </div>
-        </div>
+        <ProductsCarouselHiddenMenu modelName={modelName} />
         <StyledProductsSquareCarouselContainer>
           <img src="src\assets\mainImgs\product2.png" alt="Whey protein" />
         </StyledProductsSquareCarouselContainer>

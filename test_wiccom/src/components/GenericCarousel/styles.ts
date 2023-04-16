@@ -2,23 +2,23 @@ import styled from "styled-components";
 import { theme } from "../../styles/theme";
 
 export const StyledCarousel = styled.div`
-.mantine-Carousel-indicators{
+  .mantine-Carousel-indicators {
     display: flex;
     align-items: baseline;
-}
+  }
 
-.mantine-Carousel-control{
+  .mantine-Carousel-control {
     border-radius: 4px;
     width: 32px;
     height: 32px;
     color: ${theme.colors.black1};
     background-color: ${theme.colors.gray2};
-    transition: .5s;
-    border:0;
-    &:hover{
-        background-color: ${theme.colors.orange2};
+    transition: 0.5s;
+    border: 0;
+    &:hover {
+      background-color: ${theme.colors.orange2};
     }
-}
+  }
 
   .mantine-1jkjqkp {
     width: 40px;

@@ -15,14 +15,11 @@ import SelectableButton from "./components/SelectableButton";
 function App() {
   return (
     <MyThemeProvider theme={theme}>
-      
       <Header />
       <main>
         <LargeImgCarousel />
         <ProductsCarouselCircle />
         <ProductsCarouselSquare />
-        <SelectableButton textButton="Toffee"/>
-        
       </main>
     </MyThemeProvider>
   );

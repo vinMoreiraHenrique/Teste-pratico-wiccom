@@ -17,23 +17,7 @@ export const StyledProductsSquareContainer = styled.div`
     width: 165px;
     height: 165px;
   }
-  + button {
-    display: none;
-    width: 100%;
-    margin-top: 0px;
-  }
-  &:hover {
-    background-color: ${theme.colors.gray3};
-    + button {
-      display: block;
-    }
-    .buy-panel {
-      height: 60%;
-      z-index: 10;
-      opacity: 0.95;
-      transition: 0.5s;
-    }
-  }
+
   p {
     text-align: left;
     font-family: ${theme.font.barlow};
@@ -41,29 +25,6 @@ export const StyledProductsSquareContainer = styled.div`
     margin-left: 24px;
   }
 
-  .buy-panel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 0;
-    background-color: ${theme.colors.white};
-    opacity: 0;
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-    transition: 0.5s;
-
-    p {
-      font-family: ${theme.font.barlow};
-      color: ${theme.colors.black1};
-      font-weight: 700;
-      font-size: 14px;
-      text-transform: uppercase;
-      text-align: left;
-
-      margin-left: 0;
-    }
-  }
   .product-name {
     margin-top: 24px;
     margin-bottom: 16px;
@@ -96,7 +57,6 @@ export const StyledProductsSquareCarouselContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
 `;
 
 export const StyledOuterDiv = styled.div`
@@ -105,4 +65,61 @@ export const StyledOuterDiv = styled.div`
   align-items: center;
   height: 100%;
   margin: 0px 10px;
+  button {
+    opacity: 0;
+    margin-top: 0px;
+    margin-top: 0px;
+    transition: 0.5s;
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: ${theme.colors.gray3};
+    button {
+      display: none;
+      margin-top: 0px;
+      margin-top: 0px;
+      opacity: 1;
+      width: 100%;
+    }
+    button {
+      display: block;
+    }
+    .buy-panel {
+      height: 60%;
+      z-index: 10;
+      opacity: 0.97;
+      transition: 0.5s;
+    }
+  }
+  .buy-panel {
+    button {
+      display: block;
+      margin-top: 0px;
+      margin-top: 0px;
+      width: 70px;
+      transition: 0.5s;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    background-color: ${theme.colors.white};
+    opacity: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    transition: 0.2s;
+
+    p {
+      font-family: ${theme.font.barlow};
+      color: ${theme.colors.black1};
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-align: left;
+
+      margin-left: 0;
+    }
+  }
 `;
