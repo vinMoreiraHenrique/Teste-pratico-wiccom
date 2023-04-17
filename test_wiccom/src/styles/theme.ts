@@ -17,7 +17,13 @@ export const theme = {
     gray3:"#F1F1F1",
     //orange tones
     orange1:"#FF9601",
-    orange2:"#FFC470"
+    orange2:"#FFC470",
+    
+  },
+
+  gradient:{
+    //gradient
+    gradientDark: "linear-gradient(180deg, #3A3A3C 0%, #0B0B0B 101.48%);"
   },
 
   font: {
