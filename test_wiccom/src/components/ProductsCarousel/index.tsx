@@ -4,9 +4,9 @@ import { ProductCardCircle } from "../ProductCardCircle";
 export const ProductsCarouselCircle = () => {
   return (
     <GenericCarousel
-      numberOfSlides={1}
+      numberOfSlides={3}
       withControls={true}
-      slidesToScroll={6}
+      slidesToScroll={1}
       dragFree={true}
     >
       <div

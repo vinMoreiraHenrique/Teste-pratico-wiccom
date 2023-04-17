@@ -1,6 +1,7 @@
+import { AthleteContainer } from "../AthleteContainer";
 import { CommonButton } from "../CommonButton";
 import { GenericCarousel } from "../GenericCarousel";
-import { StyledAthletesPanelContainer, StyledImgSpanContainer } from "./styles";
+import { StyledAthletesPanelContainer } from "./styles";
 import { HiArrowRight } from "react-icons/hi";
 
 export const AthletesPanel = () => {
@@ -11,7 +12,8 @@ export const AthletesPanel = () => {
           display: "flex",
           marginBottom: "24px",
           alignItems: "space-between",
-          marginLeft: "355px",
+          // marginLeft: "260px",
+          paddingLeft: "200px",
           width: "100%",
         }}
       >
@@ -19,42 +21,16 @@ export const AthletesPanel = () => {
         <h1 className="orange-text">Black skull</h1>
       </div>
       <GenericCarousel
-        numberOfSlides={1}
+        numberOfSlides={3}
         withControls={true}
+        slidesToScroll={1}
         controlOffset="xs"
-
+        widthCarousel="1000px"
       >
         <div className="athletes-gallery">
-          <StyledImgSpanContainer>
-            <div className="athlete-info">
-              <p className="athlete-name">cedric mcmillan</p>
-              <p className="athlete-more-info">
-                Mais informação
-                <HiArrowRight style={{ marginLeft: "10px" }} />
-              </p>
-            </div>
-            <img src="src\assets\mainImgs\athlete1.png" alt="Atleta 1" />
-          </StyledImgSpanContainer>
-          <StyledImgSpanContainer>
-            <div className="athlete-info">
-              <p className="athlete-name">cedric mcmillan</p>
-              <p className="athlete-more-info">
-                Mais informação
-                <HiArrowRight style={{ marginLeft: "10px" }} />
-              </p>
-            </div>
-            <img src="src\assets\mainImgs\athlete2.png" alt="" />
-          </StyledImgSpanContainer>
-          <StyledImgSpanContainer>
-            <div className="athlete-info">
-              <p className="athlete-name">cedric mcmillan</p>
-              <p className="athlete-more-info">
-                Mais informação
-                <HiArrowRight style={{ marginLeft: "10px" }} />
-              </p>
-            </div>
-            <img src="src\assets\mainImgs\athlete3.png" alt="" />
-          </StyledImgSpanContainer>
+          <AthleteContainer athleteNumber="1" imgSrc="src\assets\mainImgs\athlete1.png"/>
+          <AthleteContainer athleteNumber="2" imgSrc="src\assets\mainImgs\athlete2.png"/>
+          <AthleteContainer athleteNumber="3" imgSrc="src\assets\mainImgs\athlete3.png" />
         </div>
       </GenericCarousel>
       <CommonButton buttonText="ver todos" />

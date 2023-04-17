@@ -1,8 +1,10 @@
 import { Carousel } from "@mantine/carousel";
 import { StyledCarousel } from "./styles";
 import { useState, useEffect } from "react";
+import { Center } from "@mantine/core";
 
 interface ICarousel {
+  widthCarousel?: string;
   dragFree?: boolean;
   slidesToScroll?: number;
   controlOffset?: string;
@@ -16,6 +18,7 @@ interface ICarousel {
 }
 
 export const GenericCarousel = ({
+  widthCarousel,
   dragFree,
   slidesToScroll,
   controlOffset,
@@ -49,6 +52,14 @@ export const GenericCarousel = ({
         withIndicators={withIndicators}
         slidesToScroll={slidesToScroll}
         dragFree={dragFree || false}
+        sx={{
+          width: widthCarousel || "",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+        // align={"center"}
+        loop
       >
         {slides}
       </Carousel>
