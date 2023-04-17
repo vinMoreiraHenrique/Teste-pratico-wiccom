@@ -14,5 +14,6 @@ export const LaunchingContainer = styled.div`
     line-height: 38px;
     text-transform: uppercase;
     color: ${theme.colors.black1};
+    
   }
 `;

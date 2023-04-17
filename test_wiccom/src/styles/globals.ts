@@ -22,7 +22,7 @@ export const GlobalStyles = createGlobalStyle`
         list-style: none;
     }
     body{
-        background-color: var(--white);
+        background-color: var(--dark1);
     }
     button{
         cursor: pointer;

@@ -2,7 +2,6 @@ import { AthleteContainer } from "../AthleteContainer";
 import { CommonButton } from "../CommonButton";
 import { GenericCarousel } from "../GenericCarousel";
 import { StyledAthletesPanelContainer } from "./styles";
-import { HiArrowRight } from "react-icons/hi";
 
 export const AthletesPanel = () => {
   return (
@@ -28,9 +27,18 @@ export const AthletesPanel = () => {
         widthCarousel="1000px"
       >
         <div className="athletes-gallery">
-          <AthleteContainer athleteNumber="1" imgSrc="src\assets\mainImgs\athlete1.png"/>
-          <AthleteContainer athleteNumber="2" imgSrc="src\assets\mainImgs\athlete2.png"/>
-          <AthleteContainer athleteNumber="3" imgSrc="src\assets\mainImgs\athlete3.png" />
+          <AthleteContainer
+            athleteNumber="1"
+            imgSrc="src\assets\mainImgs\athlete1.png"
+          />
+          <AthleteContainer
+            athleteNumber="2"
+            imgSrc="src\assets\mainImgs\athlete2.png"
+          />
+          <AthleteContainer
+            athleteNumber="3"
+            imgSrc="src\assets\mainImgs\athlete3.png"
+          />
         </div>
       </GenericCarousel>
       <CommonButton buttonText="ver todos" />
