@@ -41,7 +41,7 @@ export const SelectableButton = ({
         <StyledSelectableRectangleButton
           selected={selected}
           onClick={handleClick}
-          style={{ width: width }}
+          style={{ width: width, opacity: 1 }}
         >
           {textButton}
         </StyledSelectableRectangleButton>

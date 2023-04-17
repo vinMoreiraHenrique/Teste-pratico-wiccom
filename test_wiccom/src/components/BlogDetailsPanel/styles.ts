@@ -9,6 +9,7 @@ export const StyledBlogDetailsContainer = styled.div`
   width: 100%;
   height: 540px;
   background: ${theme.gradient.gradientDark};
+  margin-bottom: 64px;
   h1 {
     font-family: ${theme.font.robotoCondensed};
     font-size: 40px;

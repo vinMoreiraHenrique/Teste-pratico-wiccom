@@ -7,6 +7,7 @@ import { ProductsCarouselSquare } from "./components/ProductsCarouselSquare";
 import { ProductsCarouselCircle } from "./components/ProductsCarousel";
 import { AthletesPanel } from "./components/AthletesPanel/AthletesPanel";
 import { BlogDetailsCarousel } from "./components/BlogDetailsPanel";
+import { ObjectivesContainer } from "./components/ObjectivesContainer";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <AthletesPanel />
         <ProductsCarouselSquare mainText="Promoções"/>
         <BlogDetailsCarousel />
+        <ObjectivesContainer />
       </main>
     </MyThemeProvider>
   );

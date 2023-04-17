@@ -6,7 +6,7 @@ export const StyledHeaderContainer = styled.header`
   width: 1280px;
   flex-direction: column;
   position: fixed;
-  z-index: 10;
+  z-index: 11;
   svg {
     color: ${theme.colors.gray1};
     &:hover {

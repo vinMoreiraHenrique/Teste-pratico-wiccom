@@ -7,7 +7,7 @@ export const StyledImgSpanContainer = styled.div`
   justify-content: center;
   position: relative;
   overflow: hidden;
-
+  margin:0;
   :hover {
     p {
       opacity: 1;
