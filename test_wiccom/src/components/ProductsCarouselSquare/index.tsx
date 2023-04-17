@@ -2,10 +2,14 @@ import { GenericCarousel } from "../GenericCarousel";
 import { ProductCardSquare } from "../ProductCardSquare";
 import { LaunchingContainer } from "./styles";
 
-export const ProductsCarouselSquare = () => {
+interface IProductCarouselSquare {
+  mainText: string;
+}
+
+export const ProductsCarouselSquare = ({mainText}: IProductCarouselSquare) => {
   return (
     <LaunchingContainer>
-      <h1>lançamentos</h1>
+      <h1>{mainText}</h1>
       <GenericCarousel
         numberOfSlides={3}
         withControls={true}

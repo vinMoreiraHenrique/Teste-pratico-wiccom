@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { theme } from "../../styles/theme";
 
 export const StyledCarousel = styled.div`
+  /* display: flex;
+  align-items: center; // alinha os itens verticalmente
+  justify-content: center; // alinha os itens horizontalmente */
   .mantine-Carousel-indicators {
     display: flex;
     align-items: baseline;

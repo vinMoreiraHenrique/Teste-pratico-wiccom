@@ -11,6 +11,7 @@ import { ProductCardSquare } from "./components/ProductCardSquare";
 import { ProductsCarouselSquare } from "./components/ProductsCarouselSquare";
 import { ProductsCarouselCircle } from "./components/ProductsCarousel";
 import SelectableButton from "./components/SelectableButton";
+import { AthletesPanel } from "./components/AthletesPanel/AthletesPanel";
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
       <main>
         <LargeImgCarousel />
         <ProductsCarouselCircle />
-        <ProductsCarouselSquare />
+        <ProductsCarouselSquare mainText="Lançamentos"/>
+        <AthletesPanel />
+        <ProductsCarouselSquare mainText="Promoções"/>
       </main>
     </MyThemeProvider>
   );
