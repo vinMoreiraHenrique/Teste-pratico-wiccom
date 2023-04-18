@@ -9,24 +9,24 @@ export const ObjectivesContainer = () => {
       <div className="img-container">
         <ObjectivesImgContainer
           descriptiveText="Ganho de massa"
-          imgSrc="src\assets\mainImgs\model1.png"
+          imgSrc="\static\images\model1.png"
         />
         <ObjectivesImgContainer
           descriptiveText="Energia"
-          imgSrc="src\assets\mainImgs\model2.png"
+          imgSrc="\static\images\model2.png"
         />
         <ObjectivesImgContainer
           descriptiveText="Recuperação muscular"
-          imgSrc="src\assets\mainImgs\model3.png"
+          imgSrc="\static\images\model3.png"
         />
         <ObjectivesImgContainer
           descriptiveText="Emagrecimento"
-          imgSrc="src\assets\mainImgs\model4.png"
+          imgSrc="\static\images\model4.png"
         />
       </div>
       <BlackBoxContainer />
       <div className="about">
-        <img src="src\assets\mainImgs\skullVector.png" alt="logo" />
+        <img src="\static\images\skullVector.png" alt="logo" />
         <h1>Sobre a Blackskull</h1>
         <p>
           A Black Skull USA é uma marca de suplementos alimentares com foco em

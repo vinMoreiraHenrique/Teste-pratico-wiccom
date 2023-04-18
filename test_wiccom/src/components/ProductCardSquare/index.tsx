@@ -63,7 +63,7 @@ export const ProductCardSquare = ({
               style={{ width: "24px", height: "24px", cursor: "pointer" }}
             />
           </div>
-          <img src="src\assets\mainImgs\product2.png" alt="Whey protein" />
+          <img src="\static\images\product2.png" alt="Whey protein" />
         </StyledProductsSquareCarouselContainer>
         <div>
           <p className="product-name">{categoryText}</p>

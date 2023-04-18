@@ -14,7 +14,7 @@ export const Header = () => {
       <HeaderCallTous />
       <StyledHeader>
         <img
-          src="src\assets\headerIcons\headerLogo.png"
+          src="\static\images\headerLogo.png"
           style={{ width: "166px", height: "32px", display: "inline-block" }}
         />
         <StyledNavBar>

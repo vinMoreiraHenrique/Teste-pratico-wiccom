@@ -13,7 +13,7 @@ export const ProductCardCircle = ({ categoryText }: IProductCard) => {
     <StyledProductsContainer>
       <StyledProductsCarouselContainer>
         <div className="circle"></div>
-        <img src="src\assets\mainImgs\product1.png" alt="Whey protein" />
+        <img src="\static\images\product1.png" alt="Whey protein" />
       </StyledProductsCarouselContainer>
       <p>{categoryText}</p>
     </StyledProductsContainer>

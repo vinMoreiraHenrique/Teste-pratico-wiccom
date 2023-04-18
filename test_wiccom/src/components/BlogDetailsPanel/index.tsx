@@ -15,9 +15,9 @@ export const BlogDetailsCarousel = () => {
       </div>
       <GenericCarousel  numberOfSlides={3} slidesToScroll={1} withControls={true} widthCarousel="1230px">
       <StyledCardContainer>
-        <BlogImgContainer imgSrc="src\assets\mainImgs\blogImg1.png"/>
-        <BlogImgContainer imgSrc="src\assets\mainImgs\blogImg2.png"/>
-        <BlogImgContainer imgSrc="src\assets\mainImgs\blogImg3.png"/>
+        <BlogImgContainer imgSrc="\static\images\blogImg1.png"/>
+        <BlogImgContainer imgSrc="\static\images\blogImg2.png"/>
+        <BlogImgContainer imgSrc="\static\images\blogImg3.png"/>
       </StyledCardContainer>
       </GenericCarousel>
     </StyledBlogDetailsContainer>

@@ -27,7 +27,7 @@ export const LargeImgCarousel = () => {
             <CommonButton buttonText="Confira" />
           </StyledTextBox>
           <img
-            src="src\assets\mainImgs\gym_man.png"
+            src="\static\images\gym_man.png"
             alt="homem levantando peso"
           />
         </StyledLargeImgContainer>
