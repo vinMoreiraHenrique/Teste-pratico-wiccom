@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import img from "../../../public/static/images/athletesBackground.png";
+import img from "/static/images/athletesBackground.png";
 import { theme } from "../../styles/theme";
 
 export const StyledAthletesPanelContainer = styled.div`
