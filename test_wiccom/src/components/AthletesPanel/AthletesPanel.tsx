@@ -11,7 +11,6 @@ export const AthletesPanel = () => {
           display: "flex",
           marginBottom: "24px",
           alignItems: "space-between",
-          // marginLeft: "260px",
           paddingLeft: "200px",
           width: "100%",
         }}
@@ -29,15 +28,15 @@ export const AthletesPanel = () => {
         <div className="athletes-gallery">
           <AthleteContainer
             athleteNumber="1"
-            imgSrc="src\assets\mainImgs\athlete1.png"
+            imgSrc="\static\images\athlete1.png"
           />
           <AthleteContainer
             athleteNumber="2"
-            imgSrc="src\assets\mainImgs\athlete2.png"
+            imgSrc="\static\images\athlete2.png"
           />
           <AthleteContainer
             athleteNumber="3"
-            imgSrc="src\assets\mainImgs\athlete3.png"
+            imgSrc="\static\images\athlete3.png"
           />
         </div>
       </GenericCarousel>
