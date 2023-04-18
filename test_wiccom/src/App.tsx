@@ -8,7 +8,9 @@ import { ProductsCarouselCircle } from "./components/ProductsCarousel";
 import { AthletesPanel } from "./components/AthletesPanel/AthletesPanel";
 import { BlogDetailsCarousel } from "./components/BlogDetailsPanel";
 import { ObjectivesContainer } from "./components/ObjectivesContainer";
-
+import { Footer } from "./components/Footer";
+import { UnderFooter } from "./components/UnderFooter";
+import ScrollToTop from "./components/ScrollToTopButton";
 
 function App() {
   return (
@@ -17,11 +19,14 @@ function App() {
       <main>
         <LargeImgCarousel />
         <ProductsCarouselCircle />
-        <ProductsCarouselSquare mainText="Lançamentos"/>
+        <ProductsCarouselSquare mainText="Lançamentos" />
         <AthletesPanel />
-        <ProductsCarouselSquare mainText="Promoções"/>
+        <ProductsCarouselSquare mainText="Promoções" />
         <BlogDetailsCarousel />
         <ObjectivesContainer />
+        <Footer />
+        <UnderFooter />
+        <ScrollToTop />
       </main>
     </MyThemeProvider>
   );
