@@ -10,6 +10,7 @@ import { BlogDetailsCarousel } from "./components/BlogDetailsPanel";
 import { ObjectivesContainer } from "./components/ObjectivesContainer";
 import { Footer } from "./components/Footer";
 import { UnderFooter } from "./components/UnderFooter";
+import ScrollToTop from "./components/ScrollToTopButton";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <ObjectivesContainer />
         <Footer />
         <UnderFooter />
+        <ScrollToTop />
       </main>
     </MyThemeProvider>
   );
